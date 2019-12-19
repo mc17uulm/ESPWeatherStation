@@ -3,6 +3,7 @@
 
 #include <Arduino.h>
 #include <DHT.h>
+//#include <ESP8266WiFi.h>
 
 class WeatherStation {
 
@@ -15,6 +16,7 @@ class WeatherStation {
     void yellow(bool on = true);
     void red(bool on = true);
     void measure();
+    //void connect_to_wifi(const char* ssid, const char* password);
 
   private:
     uint8_t GREEN_PIN;

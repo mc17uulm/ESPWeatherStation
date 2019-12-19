@@ -1,5 +1,4 @@
 #include <WeatherStation.h>
-#include <DHT.h>
 
 WeatherStation::WeatherStation(uint8_t DHT_PIN) {
   WeatherStation::DHT_PIN = DHT_PIN;
@@ -58,3 +57,4 @@ void WeatherStation::yellow(bool on) {
 void WeatherStation::red(bool on) {
   digitalWrite(WeatherStation::RED_PIN, on ? HIGH : LOW);
 }
+
