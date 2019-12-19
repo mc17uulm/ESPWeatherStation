@@ -1,0 +1,7 @@
+WeatherStation  KEYWORD1
+initLED         KEYWORD2
+initDHT         KEYWORD2 
+measure         KEYWORD2
+green           KEYWORD2
+yellow          KEYWORD2
+red             KEYWORD2
