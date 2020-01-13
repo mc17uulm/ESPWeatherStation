@@ -1,0 +1,10 @@
+#ifndef WeatherStationConfig_H
+#define WeatherStationConfig_H
+
+#define AUTHENTICATION_KEY ""
+#define SSL_FINGERPRINT ""
+#define WIFI_SSID ""
+#define WIFI_PASSWORD ""
+#define SERVER_HOST ""
+
+#endif

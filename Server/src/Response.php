@@ -22,7 +22,7 @@ class Response
         self::send($payload);
     }
 
-    public static function send_success($payload) : void
+    public static function send_success($payload = "") : void
     {
         self::send(array(
             "type" => "success",

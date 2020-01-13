@@ -34,25 +34,33 @@ class Server
             }
 
             $authentication = $json["authentication"];
-            if($authentication !== "authentication") {
+            $key = getenv("AUTHORIZATION_KEY");
+            if($authentication !== $key) {
                 Response::send_error("Invalid payload");
             }
 
+            $db = new \PDO(
+                'mysql:host=localhost;dbname=' . getenv("DATABASE_NAME"),
+                getenv("DATABASE_USER"),
+                getenv("DATABASE_PASSWORD")
+            );
+
             $temperature = $json["temperature"];
             $humidity = $json["humidity"];
-            $date = date('D. j M G:i:s', time());
 
-            $data = "$date | Temperature: $temperature °C | Humidity: $humidity %\n";
-
-            file_put_contents(__DIR__ . "/../log.txt", $data, FILE_APPEND);
-
-            Response::send_success(array(
-                "humidity" => $humidity,
-                "temperature" => $temperature
+            $sql = "INSERT INTO log (date, temperatue, humidity) VALUES (NOW(), ?, ?)";
+            $stmt = $db->prepare($sql);
+            $stmt->execute(array(
+                $temperature,
+                $humidity
             ));
+
+            Response::send_success();
 
         } catch (\JsonException $e) {
             Response::send_error("Invalid payload");
+        } catch (\PDOException $e) {
+            Response::send_error("Invalid Request");
         }
 
     }

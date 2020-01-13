@@ -1,0 +1,1 @@
+CREATE TABLE `db_name`.`log` ( `id` INT NOT NULL AUTO_INCREMENT , `date` TIMESTAMP NOT NULL , `temperature` FLOAT NOT NULL , `humidity` FLOAT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
