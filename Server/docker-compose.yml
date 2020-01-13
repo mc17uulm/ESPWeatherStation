@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+
+  cli:
+    container_name: php_server
+    build: ./docker/
+    volumes:
+      - ./:/var/www/html
+    restart: always
+    stdin_open: true
+    ports:
+      - "8000:80"
+    tty: true
+    networks:
+      main:
+        aliases:
+          - cli
+
+networks:
+  main:

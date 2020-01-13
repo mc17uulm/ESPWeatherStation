@@ -1,0 +1,15 @@
+{
+    "name": "mc17/esp8266weatherstationserver",
+    "authors": [
+        {
+            "name": "mc17uulm",
+            "email": "marco.combosch@uni-ulm.de"
+        }
+    ],
+    "require": {},
+    "autoload": {
+      "psr-4": {
+        "ESP8266WeatherStation\\": "src/"
+      }
+    }
+}

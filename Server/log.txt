@@ -1,0 +1,9 @@
+Mon. 13 Jan 20:11:31 | Temperature: 15.6 °C | Humidity: 55.6 %
+Mon. 13 Jan 20:11:32 | Temperature: 23 °C | Humidity: 57 %
+Mon. 13 Jan 20:11:42 | Temperature: 23 °C | Humidity: 59 %
+Mon. 13 Jan 20:11:53 | Temperature: 23.1 °C | Humidity: 57 %
+Mon. 13 Jan 20:12:03 | Temperature: 22.9 °C | Humidity: 56 %Mon. 13 Jan 20:12:13 | Temperature: 22.9 °C | Humidity: 56 %
+Mon. 13 Jan 20:12:23 | Temperature: 23.1 °C | Humidity: 55 %
+Mon. 13 Jan 20:12:33 | Temperature: 23.1 °C | Humidity: 58 %
+Mon. 13 Jan 20:12:43 | Temperature: 23.2 °C | Humidity: 58 %
+Mon. 13 Jan 20:12:53 | Temperature: 23.2 °C | Humidity: 58 %
